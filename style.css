@@ -82,10 +82,15 @@ a{
 	color: #2c71b8;
 }
 
-.navMenu li a:hover{
+/*.navMenu li a:hover{
+	color: white;
+	background-color: #2c71b8;
+}*/
+.navMenu li:hover>a{
 	color: white;
 	background-color: #2c71b8;
 }
+
 
 .navMenu li:last-child{
 
@@ -105,7 +110,7 @@ a{
   transform: rotate(-90deg);
 }
  
-.navMenu li > a:hover:after {
+.navMenu li:hover > a:after {
  color: white;
  
 }
