@@ -8,18 +8,18 @@
 </head>
 <body>
 	<header class="header">
-		<div class="headerconteiner">
-			<div class="block1">
+		<div class="headerBlock">
+			<div class="col-md-3">
 				<div class="logo">
-					<a href=""><img src="img/icon (3).png" alt=""></a>
+					<a href=""><img src="img/icon-3.png" alt=""></a>
 				</div>
 			</div>
-			<div class="block2">
+			<div class="col-md-6">
 				<div class="navigation">
 				
 					<ul class="navMenu">
-						<li><a href="">Home</a></li>
-						<li>
+						<li class="col-md-3"><a href="">Home</a></li>
+						<li class="col-md-3">
 							<a href="">Products </a>
 							<ul class="subNavMenu">
 								<li><a href="">Lorem ipsum dolor</a></li>
@@ -31,13 +31,13 @@
 								<li><a href="">Quis nostrud</a></li>
 							</ul>
 						</li>
-						<li><a href="">Payment</a></li>
-						<li><a href="">Shipping</a></li>
+						<li class="col-md-3"><a href="">Payment</a></li>
+						<li class="col-md-3"><a href="">Shipping</a></li>
 					</ul>
 				
 				</div>
 			</div>
-			<div class="block3">
+			<div class="col-md-3">
 				<div class=" search">
 					
 						<input class="searchField" type="text" placeholder="search" />
@@ -55,11 +55,12 @@
 		
 	</header>
 	<main>
-		<div class="slider">
+		<div class="mainBlock">
+			<div class="slider col-md-12">
 			
-		</div>
-		<div class="main">
-			<div class="leftSide row">
+			</div>
+		
+			<div class="col-md-3">  <!-- left side -->
 				<div class="searchByParameters">
 					<div>
 						<h2>Device type</h2>
@@ -124,23 +125,23 @@
 				</div>
 				
 			</div>
-			<div class="rightSide row">
+			<div class="rightSide col-md-9">  <!-- right side -->
 				<div class="mainHeader">
-					<div class="navCrumbs">
+					<div class="col-md-12">
 						<ul class="breadcrumbs">
 							<li ><a href="">Home page</a></li>
 							<li ><a href="">Products</a></li>
 							<li ><a href="" class="current">Laptops and Tablets</a></li>
 						</ul>
 					</div>
-					<div class="mainHeaderTitle">
-						<h1>
+					<div class="col-md-9">
+						<h1 class="mainHeaderTitle">
 							Laptops and Tablets
 						</h1>
 					</div>
-					<div class="sort">
+					<div class="sort col-md-3">
 						<ul class="sortMenu">
-							<li id="firstLi">
+							<li  id="firstLi">
 								<a href="">sort by prise</a>
 									<ul class="sortSubMenu">
 										<li>
@@ -161,7 +162,7 @@
 				</div>
 			
 				<div class="products">
-					<div class="card row">
+					<div class="card col-md-4"">
 						<div class="photo">
 							<img src="img/icon-17.png" alt="">
 							<div class="buttonZoom">
@@ -212,7 +213,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-9.png" alt="">
 							<div class="buttonZoom">
@@ -263,7 +264,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-10.png" alt="">
 							<div class="buttonZoom">
@@ -314,7 +315,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-16.png" alt="">
 							<div class="buttonZoom">
@@ -365,7 +366,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-14.png" alt="">
 							<div class="buttonZoom">
@@ -416,7 +417,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-12.png" alt="">
 							<div class="buttonZoom">
@@ -467,7 +468,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-15.png" alt="">
 							<div class="buttonZoom">
@@ -518,7 +519,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-11.png" alt="">
 							<div class="buttonZoom">
@@ -569,7 +570,7 @@
 								</button>
 						</div>
 					</div>
-					<div class="card row">
+					<div class="card col-md-4">
 						<div class="photo">
 							<img src="img/icon-13.png" alt="">
 							<div class="buttonZoom">
@@ -628,7 +629,10 @@
 	</main>
 
 	<footer>
-		<p>&#169; Copyright 2017</p>
+		<div class="col-md-12">
+			<p>&#169; Copyright 2017</p>
+		</div>
+		
 	</footer>
 
 	

@@ -13,7 +13,45 @@ body{
 a{
 	display: block;
 	text-align: center;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
 }
+
+li{
+	list-style:none; 
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+[class*="col-"]:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.col-md-3{
+	width: 25%;
+}
+
+.col-md-4{
+	width: 30%;
+}
+
+.col-md-6{
+	width: 50%;
+}
+.col-md-9{
+	width: 75%;
+}
+
+.col-md-12{
+	width: 100%;
+}
+
+
 
 /*---------------------header-----------------------*/
 
@@ -23,62 +61,39 @@ a{
 	padding: 25px;
 }
 
-.headerconteiner{
+.headerBlock{
 	width: 1170px;
     margin: 0 auto;
 }
 
-.block1, .block2, .block3{
-	float:left;
-	height: 50px;
-	line-height: 50px;
-}
-
-.block1{
-	width: 25%;
-}
-
-.block2{
-	width: 50%;
-}
-
-.block3{
-	width: 25%;
-}
-
-.headerconteiner:after{
+.headerBlock:after{
 	content: "";
     clear: both;
     display: block;
 }
 
-
+.navigation:after{
+	content: "";
+	clear: both;
+	display: block;
+}
 
 .logo>a>img{
 	vertical-align: middle;
 }
-
 
 .navMenu{
 	display: block;
 }
 
 .navMenu li{
-	float: left;
-	list-style: none;
 	color: #2c71b8;
 	font-size: 21px;
 	border-left: 1px solid #2c71b8;
-	width: 25%;
 	text-align: center;
-
 }
 
 .navMenu li a{
-	height: 50px;
-	line-height: 50px;
-	display: block;
-	text-decoration: none;
 	color: #2c71b8;
 }
 
@@ -112,6 +127,12 @@ a{
  
 .navMenu li > a:only-child:after {
  content: '';
+}
+
+.navMenu:after{
+	content: "";
+	clear: both;
+	display: block;
 }
 
 .search{
@@ -243,32 +264,35 @@ a{
 
 /*---------------main-----------------*/
 
+.mainBlock{
+	width: 1170px;
+    margin: 0 auto;
+}
+
+.mainBlock:after{
+	content: "";
+	clear: both;
+	display: block;
+}
 
 /* ----------------slider--------------- */
 .slider{
-	width: 100%;
 	height: 400px;
 	border-bottom: 1px solid white;
 }
 
 
 
+/* --------------right side--------------- */
 
-
-
-
-/* --------------left and right side--------------- */
-.navCrumbs{
-	width: 100%;
-	height: 70px;
-	line-height: 70px;
-	vertical-align: middle;
+.rightSide{
+	padding-left: 30px;
 }
 
 .breadcrumbs > li{
 	list-style: none;
 	float: left;
-	margin: 0 5px;
+
 }
 
 .breadcrumbs:after{
@@ -278,10 +302,8 @@ a{
 }
 
 .breadcrumbs > li>a{
-	text-decoration: none;
 	color:#acc1dd;
 	font-size: 14px;
-	display: block;
 
 }
 .breadcrumbs > li>a:after{
@@ -297,90 +319,59 @@ a{
 	
 }
 
-
-
-.leftSide{
-	width: 30%;
-
-}
-
-.rightSide{
-	width: 70%;
-
-}
-
-
-
-.row{
-	float:left;
-
-}
-.row:after{
-	content: "";
-	clear: both;
-	display: block;
-}
-
 .products:after{
 	content: "";
 	clear: both;
 	display: block;
 }
-.main:after{
+
+
+.mainHeader:after{
 	content: "";
 	clear: both;
 	display: block;
-}
+} 
 
-
-.mainHeader{
-	height: 165px;
-	width: 975px;
-}
 
 .mainHeaderTitle{
-	float: left;
-	width: 630px;
-}
-
-.mainHeaderTitle:after{
-	content: '';
-	clear: both;
-	display: block;
-}
-
-.mainHeaderTitle>h1{
 	font-size: 48px;
 	color: white;
 
 }
 
-.sort{
-	width: 270px;
-	float: right;
-	margin-top: 10px;
-}
 
+.sortMenu{
+	position: relative;
+	z-index: 20;
+
+}
 .sortSubMenu{
 	margin-left: -1px;
+	margin-right: -1px;
 	margin-top: -1px;
 
 }
-.sortMenu > li, .sortSubMenu > li {
+.sortMenu > li {
 	border: 1px solid white;
-	width: 270px;
 	height: 40px;
 	line-height: 40px;
 	background-color: #2c71b8;
-	list-style: none;
-	text-align: center;
-	vertical-align: middle;
 
 }
+
+.sortSubMenu > li {
+	border: 1px solid white;
+	height: 40px;
+	line-height: 40px;
+	background-color: #2c71b8;
+	display: none; 
+
+}
+
 #firstLi {
  background-image: url(img/p.png);
  background-repeat: no-repeat;
- background-position: 230px;
+ background-position: 185px;
 
 }
  
@@ -399,6 +390,8 @@ a{
 	display: block;
 	color: white;
 	font-size: 21px;
+	height: 40px;
+	line-height: 40px;
 	text-decoration: none;
 }
 
@@ -407,21 +400,28 @@ a{
 	background-color: white;
 }
 
-.sortSubMenu > li{
-	display: none;
-} 
-
 .sortMenu > li:hover > .sortSubMenu>li {
 	display: block;
 } 
+.products{
+		position: relative;
 
+}
 
 .card{
 	border: 1px solid white;
-	width: 30%;
 	color: white;
-	margin: 15px;
+	margin:30px; 
+	
 }
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card:nth-child(1n) {
+  margin-left: 0;
+} 
 
 .photo{
 	display: block;
@@ -521,6 +521,7 @@ a{
 	font-size: 48px;
 	text-align: center;
 	font-weight: bold;
+	margin-bottom: 25px;
 }
 
 .details, .add{
@@ -529,7 +530,9 @@ a{
 	line-height: 50px;
 	padding-left: 30px;
 	vertical-align: middle;
-	margin: 25px 30px 16px ;
+	margin-left:20px ;
+	margin-right:20px ;
+	margin-bottom: 25px;
 	text-transform: uppercase;
 	font-size: 21px;
 	color: white;
@@ -574,9 +577,7 @@ a{
 /* ---------left side------------ */
 
 .searchByParameters{
-	margin-left: 150px;
-	width: 270px;
-	margin-right: 30px;
+
 	padding: 10px 30px;
 	background-color: rgba(202, 219, 237, 0.4);
 	border-right: 1px solid white;
@@ -657,6 +658,7 @@ input:checked + label:before{
 
 
 /*-----------footer----------------*/
+
 footer{
 	height: 100px;
 	line-height: 100px;
@@ -665,7 +667,7 @@ footer{
 	vertical-align: middle;
 	
 }
-footer > p{
+footer > div > p{
 	
 	color: #2c71b8;
 	font-size: 21px;
