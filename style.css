@@ -231,6 +231,8 @@ li{
 }
 .subNavMenu{
 	display: none;
+	position: absolute;
+	margin-left: -1px;
 
 }
 .subNavMenu li{
@@ -238,6 +240,8 @@ li{
 	border: none;
 	display: block;
 	width: 284px;
+	height: 40px;
+	line-height: 40px;
 	text-align: left;
 	background-color: #2c71b8;
 
@@ -248,6 +252,8 @@ li{
 	color: white;
 	text-align: left;
 	text-indent: 30px; 
+	height: 40px;
+	line-height: 40px;
 
 
 }
@@ -479,6 +485,16 @@ li{
 
 }
 
+.expanded {
+	background-color: transparent;
+	background-image: url(img/icon-5.png);
+}
+
+.collapsed {
+	background-color: #2c71b8;
+	background-image: url(img/icon-7.png);
+}
+
 .desc{
 	background-color: rgba(44, 113, 184, 0.8);
 }
@@ -524,7 +540,7 @@ li{
 	margin-bottom: 25px;
 }
 
-.details, .add{
+.details, .add-to-cart{
 	width: 210px;
 	height: 50px;
 	line-height: 50px;
@@ -548,7 +564,7 @@ li{
 }
 
 
-.add {
+.add-to-cart {
 	background-image: url(img/icon-2.png);	
 	background-repeat: no-repeat;
 	background-position-x: 180px;
@@ -556,7 +572,7 @@ li{
 
 }
 
-.details:hover, .add:hover{
+.details:hover, .add-to-cart:hover{
 	background-color: #568dc6;
 }
 
